@@ -5,4 +5,5 @@ export const WrapperTypeProduct = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 24px;
+    height: 44px;
 `
