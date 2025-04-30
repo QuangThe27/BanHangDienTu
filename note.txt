@@ -1,3 +1,5 @@
 Tạo image slider tư động: 
     - Cài đặt thêm thư viện react-slick
     - Tích hợp react-slick để tạo slider
+
+Tạo cart product cho sản phẩm
