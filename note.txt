@@ -7,3 +7,5 @@ Tạo card product cho sản phẩm
 Tạo Navbar cho dự án
 
 Hoàn thiện giao diện
+
+Xây dựng trang product detail

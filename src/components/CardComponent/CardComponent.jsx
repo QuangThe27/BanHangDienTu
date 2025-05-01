@@ -4,7 +4,8 @@ import {
     WrapperCardStyle,
     WrapperDiscountText, 
     WrapperPriceText, 
-    WrapperReportText 
+    WrapperReportText, 
+    WrapperStyleTextSell
 } from "./style";
 import { StarFilled } from '@ant-design/icons';
 import tiki from '../../asset/images/tiki.jpeg';
@@ -31,9 +32,9 @@ const CardComponent = () => {
 
             <WrapperReportText>
                 <span style={{ marginRight: '12px' }}>
-                    <span>4.96 </span> <StarFilled style={{fontSize: '12px', color: 'yellow'}}/>
+                    <span>4.96 </span> <StarFilled style={{fontSize: '12px', color: 'rgb(253, 216, 54)'}}/>
                 </span>
-                <span> | Đã bán 1000+</span>
+                <WrapperStyleTextSell> | Đã bán 1000+</WrapperStyleTextSell>
             </WrapperReportText>
 
             <WrapperPriceText>
