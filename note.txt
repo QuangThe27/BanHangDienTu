@@ -9,3 +9,5 @@ Tạo Navbar cho dự án
 Hoàn thiện giao diện
 
 Xây dựng trang product detail
+
+Xây dựng trang đăng nhập, đăng ký
