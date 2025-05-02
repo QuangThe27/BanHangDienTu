@@ -38,7 +38,7 @@ const CardComponent = () => {
             </WrapperReportText>
 
             <WrapperPriceText>
-                1.000.000đ
+                <span style={{marginRight: '8px'}}>1.000.000</span>
                 <WrapperDiscountText>-5%</WrapperDiscountText>
             </WrapperPriceText>
         </WrapperCardStyle>

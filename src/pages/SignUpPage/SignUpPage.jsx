@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { WrapperContainerLeft, WrapperContainerRight, WrapperTextLight } from "./style";
 import InputForm from "../../components/InputForm/InputForm";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 import imageLogin from '../../asset/images/tiki_login.png'
 import { Image } from "antd";
-
+import { EyeFilled, EyeInvisibleFilled } from "@ant-design/icons";
 
 function SignUpPage() {
+    const [isShowPassword, setIsShowPassword] = useState(false)
+    const [isShowConfirmPassword, setIsShowConfirmPassword] = useState(false)
+
     return (
         <div style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -20,8 +23,38 @@ function SignUpPage() {
                     <p>Đăng nhập vào tạo tài khoản</p>
 
                     <InputForm style={{ marginBottom: '10px' }}  placeholder="abc@gmail.com"/>
-                    <InputForm placeholder="password" style={{ marginBottom: '10px' }}/>
-                    <InputForm placeholder="comfirm password"/>
+
+                    <div style={{position: 'relative'}}>
+                        <span
+                            style={{
+                                zIndex: 10,
+                                position: 'absolute',
+                                top: '8px',
+                                right: '8px'
+                            }}
+                        >
+                            {
+                                isShowPassword ? ( <EyeFilled/> ) : ( <EyeInvisibleFilled/> )
+                            }
+                        </span>
+                        <InputForm placeholder="password" style={{ marginBottom: '10px' }}  type={isShowPassword ? "text" : "password"}/>
+                    </div>
+
+                    <div style={{position: 'relative'}}>
+                        <span
+                            style={{
+                                zIndex: 10,
+                                position: 'absolute',
+                                top: '8px',
+                                right: '8px'
+                            }}
+                        >
+                            {
+                                isShowConfirmPassword ? ( <EyeFilled/> ) : ( <EyeInvisibleFilled/> )
+                            }
+                        </span>
+                        <InputForm placeholder="comfirm password"  type={isShowConfirmPassword ? "text" : "password"}/>
+                    </div>
 
                     <ButtonComponent    
                         bordered={false}
